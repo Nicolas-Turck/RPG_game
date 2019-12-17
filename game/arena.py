@@ -1,45 +1,30 @@
 import random
+from game.factory import Program
 ennemis = ["orc", "loup", "zombie"]
-class Arena():
+personnage = ["archer", "magicien", "guerrier"]
+class Arena(Program):
     """"""
     personnage = ["archer", "magicien", "guerrier"]
-    enn = ""
-    len_life = True
+
+    
     def __init__(self):
-        self.choice = choice
-        self.player_choice = player_choice
-        self.ennemis = ennemis
-        self.ennemis_liste = ["orc", "loup", "zombie"]
 
+        self.program_player = rival
+        self.user_player = player
+        player_choice = player_choice
+    
+  
 
-    def player_action(self):
+    def action():
         """"""
-        len_life = True
-        while len_life == True:
-            while self.player_choice != "a" and self.player_choice != "r":
-                self.player_choice = input("(a) for attack or (r) for run")
-                print(self.player_choice)
-                if self.player_choice == "a":
-                    Arena.attack()
-
-    def random_list():
-        """method for choice ennemis """
-        print(ennemis[random.randint(0, len(ennemis)-1)])
-
-
-
-
-    def choice_player():
-        #choice_players = input("attack (a) or run (r)")
-        while choice_player != "a" or choice_player != "r":
-            choice_players = input("attack (a) or run (r)")
-            if choice_player == "a":
-                print("your attacked ")
-                attack()
-
-            if choice_player == "r":
-                print("you run ")
-                run()
+        while self.player.life > 0  or rival.life > 0:
+            player_choice = input("(a) for attack or (r) for run..:")
+            while player_choice != "a" or player_choice != "r":
+                player_choice = input("(a) for attack or (r) for run..:")
+                print(player_choice)
+            if player_choice == "a":
+                rival.life -= player.attack
+                print(rival.life)
 
 
 
