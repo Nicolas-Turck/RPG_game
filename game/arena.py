@@ -1,7 +1,10 @@
 import random
 
+
+ennemis = ["orc", "loup", "zombie"]
 class Arena():
     """"""
+    
     personnage = ["archer", "magicien", "guerrier"]
     enn = ""
     len_life = True
@@ -9,20 +12,6 @@ class Arena():
         self.choice = choice
         self.player_choice = player_choice
         self.ennemis = ennemis
-        self.ennemis_liste = ["orc", "loup", "zombie"]
-
-    def random_program(self):
-        """"""
-        self.choice = random.randrange(1, 4)
-        return self.choice
-        """for elem in self.ennemis_liste:
-            if self.choice == elem[index]:
-                self.ennemis = elem[index]
-            print(self.ennemis)
-            return self.choice
-            return self.ennemis
-            print(self.choice)
-            print(self.ennemis)"""
 
 
     def player_action(self):
@@ -39,28 +28,25 @@ class Arena():
         """"""
         print("contact")
 
-=======
-class Combat():
-    choice = ["attack", "run", ]
-    personnage = ["archer", "magicien", "guerrier"]
-    ennemis = ["orc", "loup", "zombie"]
+
+    # def Combat():
+    #     choice = ["attack", "run", ]
+    #     personnage = ["archer", "magicien", "guerrier"]
+    #     ennemis = ["orc", "loup", "zombie"]
 
     def __init__(self):
         choice_player = ""
         choice = choice
 
 
-    def random_enemis(self):
-        self.choice = random.randrange(1, 3)
-        self.ennemis = random;randrange(0, 3)
-        print(ennemis)
+    def random_list():
+        print (ennemis[random.randint(0,len(ennemis)-1)])
+    
 
-
-
+    
     def choice_player(self):
+        choice_player = input("attack (a) or run (r) : ")
         while choice_player != "a" or choice_player != "r":
-            choice_player = input("attack (a) or run (r) : ")
-
             if choice_player == "a":
                 print("your attacked ")
                 attack()
@@ -68,12 +54,3 @@ class Combat():
             if choice_player == "r":
                 print("you run ")
                 run()
-
-
-    #def attack(self):
-
-
-
-    #def run(self):
->>>>>>> nicolas
-
