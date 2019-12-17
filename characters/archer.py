@@ -1,6 +1,7 @@
-from person import Person
+from characters.person import *
 class Archer(Person):
     """class for archer player"""
-    def __init__(self):
-        super().__init__(life, attack, defense )
+    def __init__(self, name, life, attack, defense, agility):
+        self.name = name
+        super().__init__(life, attack, defense, agility )
 
