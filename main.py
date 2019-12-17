@@ -1,12 +1,17 @@
 import os
+from characters.character import Person
 from characters.magicien import Magicien
-
+from characters.archer import Archer
 if __name__=='__main__':
-   # gue = Guerrier("nicos")
-    #print(gue.__dict__)
-    mag = Magicien("nicos")
-    print(mag.__dict__)
 
+
+
+    names = enter_name()
+
+    mag = Magicien("nicos")
+    arc = Archer("farid")
+    print(mag.__dict__)
+    print(arc.__dict__)
     #narration
     #start game
     #random choice ennemiss

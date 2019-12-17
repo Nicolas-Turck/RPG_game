@@ -1,4 +1,4 @@
-from .characters import Person
+from .character import Person
 class Archer(Person):
     """class for archer player"""
     def __init__(self, name):
