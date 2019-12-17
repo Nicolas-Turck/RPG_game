@@ -1,8 +1,8 @@
-from characters.person import *
+from .character import Person
 
 class Magicien(Person):
     """class for magicien player"""
-    def __init__(self, name, life, attack, defense, agility):
+    def __init__(self, name):
         self.name = name
-        self.mana = 50
-        super().__init__(life, attack, defense, agility)
+        #self.mana = 50
+        super().__init__(600, 20, 50, 25, name)

@@ -6,3 +6,6 @@ class Person:
         self.attack = attack
         self.defense = defense
         self.agility = agility
+
+    def enter_name(self, name):
+        name = input
