@@ -3,6 +3,8 @@ from characters.magicien import Magicien
 from characters.orc import Orc
 from characters.loup import Loup
 from characters.zombie import Zombie
+from characters.guerrier import Guerrier
+from characters.archer import Archer
 
 if __name__=='__main__':
    # gue = Guerrier("nicos")
