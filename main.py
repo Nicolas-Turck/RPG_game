@@ -1,10 +1,16 @@
 import os
-from characters.magicien import Magicien
-from characters.orc import Orc
-from characters.loup import Loup
-from characters.zombie import Zombie
+from characters.character import Person
+# from characters.magicien import Magicien
+# from characters.orc import Orc
+# from characters.loup import Loup
+# from characters.zombie import Zombie
 
 if __name__=='__main__':
+
+    Person.enter_name()
+
+    # character.enter_name()
+
    # gue = Guerrier("nicos")
     #print(gue.__dict__)
     # mag = Magicien("nicos")

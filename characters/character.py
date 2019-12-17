@@ -12,5 +12,8 @@ class Person:
     def player_choice(self):
         choice = print()
 
-    def enter_name(self, name):
-        name = input("enter your name friends:")
+    def enter_name():
+        """ Ask name at player and loop if dont inform good name """
+        name = input("Veuillez entrer votre nom pour jouer :")
+        print("Bonne chance {}".format(name))
+
