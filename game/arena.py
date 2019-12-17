@@ -1,5 +1,4 @@
 import random
-<<<<<<< HEAD
 
 class Arena():
     """"""
