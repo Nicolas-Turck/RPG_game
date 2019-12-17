@@ -1,7 +1,7 @@
-from person import Person
+from .charaters import Person
 
 class Zombie(Person):
 
     def __init__(self):
     self.name = name 
-    super().__init__(life, attack, defence, agility)
+    super().__init__(600, 15, 14, 5, name) 
