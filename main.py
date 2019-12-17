@@ -1,13 +1,15 @@
 import os
 from characters.character import Person
+from game.factory import Start
 # from characters.magicien import Magicien
-# from characters.orc import Orc
-# from characters.loup import Loup
-# from characters.zombie import Zombie
+from characters.orc import Orc
+from characters.loup import Loup
+from characters.zombie import Zombie
 
 if __name__=='__main__':
 
-    Person.enter_name()
+    Start.enter_name()
+    Start.choice_hero()
 
     # character.enter_name()
 
@@ -15,12 +17,12 @@ if __name__=='__main__':
     #print(gue.__dict__)
     # mag = Magicien("nicos")
     # print(mag.__dict__)
-    # a= Orc()
-    # print (a.__dict__)
-    # b= Loup()
-    # print (b.__dict__)
-    # c= Zombie()
-    # print (c.__dict__)
+    a= Orc()
+    print (a.__dict__)
+    b= Loup()
+    print (b.__dict__)
+    c= Zombie()
+    print (c.__dict__)
     #narration
     #start game
     #random choice ennemiss
