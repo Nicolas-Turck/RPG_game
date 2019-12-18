@@ -11,9 +11,9 @@ from game.arena import Arena
 
 if __name__=='__main__':
 
-    # Start.enter_name()
+    Start.enter_name()
     Start.choice_hero()
-    # Arena.random_list()
+    Arena.random_list()
 
 
     # character.enter_name()
