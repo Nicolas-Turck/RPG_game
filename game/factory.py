@@ -31,7 +31,7 @@ class Program():
 
         print(f"Bonne chance {name} le grand")
     
-    def choice_hero():
+    def choice_hero(name):
         print("Liste des heros disponible :  archer (°ʖ´)⊃)x->    x->,     magicien (°-°)⊃━☆ﾟ.*･｡ﾟ,      guerrier ︻╦̵̵͇̿̿̿̿╤── -- --")
 
         choice_classes=input("Veuillez choisir votre héro: ").lower()#player enter choice 
