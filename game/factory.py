@@ -18,6 +18,7 @@ class Program():
         """ Ask name at player and loop if dont inform good name """
         
         name = input("Veuillez entrer votre nom pour jouer :")
+
         
         print("Bonne chance {}".format(name))
         Program.choice_hero(name)
@@ -27,6 +28,12 @@ class Program():
         """method for player choice is hero"""
         
         print("Liste des heros disponible :  archer ︻╦̵̵͇̿̿̿̿╤──,     magicien (∩｀-´)⊃━☆ﾟ.*･｡ﾟ,      guerrier (｀ʖ´)⊃-(==>")
+
+        print(f"Bonne chance {name} le grand")
+    
+    def choice_hero():
+        print("Liste des heros disponible :  archer (°ʖ´)⊃)x->    x->,     magicien (°-°)⊃━☆ﾟ.*･｡ﾟ,      guerrier ︻╦̵̵͇̿̿̿̿╤── -- --")
+
         choice_classes=input("Veuillez choisir votre héro: ").lower()#player enter choice 
         while choice_classes not in personnage :
             print("Veuillez choisir entre archer, magicien ou guerrier") 
