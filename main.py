@@ -13,7 +13,7 @@ if __name__=='__main__':
 
     Program.enter_name()
     Program.random_list()
-    print(player.__dict__)
+    #print(player.__dict__)
     print("go to the fight for liberty")
     
     Arena.action()

@@ -10,9 +10,10 @@ class Program():
         #self.enemis = enemis
         #self.choice = choice
         #self.ennemis_liste = ["orc", "loup", "zombie"]
-        #self.__choice_classes = choice_classes
-        rival = rival
-        player = player
+        choice_classes = choice_classes
+        self.rival = rival
+        self.player = player
+        name = name
     def enter_name():
         """ Ask name at player and loop if dont inform good name """
         
@@ -66,7 +67,7 @@ class Program():
             return rival
 
 
-    def import_player_heros(choice_classes, name):
+    def import_player_heros( choice_classes, name):
         """method for create player hero and return it """
         if choice_classes == "archer":
             from characters.archer import Archer

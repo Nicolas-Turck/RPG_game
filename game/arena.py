@@ -1,5 +1,6 @@
 import random
 from game.factory import Program
+
 ennemis = ["orc", "loup", "zombie"]
 personnage = ["archer", "magicien", "guerrier"]
 class Arena(Program):
@@ -17,7 +18,7 @@ class Arena(Program):
 
     def action():
         """"""
-        while self.player.life > 0  or rival.life > 0:
+        while player.life > 0  or rival.life > 0:
             player_choice = input("(a) for attack or (r) for run..:")
             while player_choice != "a" or player_choice != "r":
                 player_choice = input("(a) for attack or (r) for run..:")
