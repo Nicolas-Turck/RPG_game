@@ -7,7 +7,7 @@ class Arena(Program):
     """"""
     personnage = ["archer", "magicien", "guerrier"]
 
-    
+
     def __init__(self):
 
         self.program_player = rival
@@ -26,6 +26,7 @@ class Arena(Program):
             if player_choice == "a":
                 rival.life -= player.attack
                 print(rival.life)
+
 
 
 

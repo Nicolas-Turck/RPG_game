@@ -11,6 +11,7 @@ from game.arena import Arena
 
 if __name__=='__main__':
 
+
     Program.enter_name()
     Program.random_list()
     #print(player.__dict__)
@@ -53,3 +54,4 @@ if __name__=='__main__':
 
 
     
+
