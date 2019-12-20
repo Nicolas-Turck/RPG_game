@@ -23,7 +23,7 @@ class Arena(Program):
             if self.player_choice == "r" :
                 print("Fuyezzzzzzzzzzz pauvre fou!!")
                 return
-                    
+
     def calc_life(self, player, rival):
         """method for calucalte life if player choice combat"""
         critique = random.randint(0, 10)
@@ -37,12 +37,12 @@ class Arena(Program):
             if rival.defense > player.attack:
                     dammages = rival.defense - player.attack
                     rival.life -= dammages
-                    print(f"la vie de votre adversaire est de {self.rival.life} hp")
-                    
+                    print(f"La vie de votre adversaire est de {self.rival.life} hp")
+
             if rival.defense < player.attack:
                 dammages = player.attack /2
                 rival.life -= dammages
-                print(f"la vie de votre adversaire est de {self.rival.life} hp")
+                print(f"La vie de votre adversaire est de {self.rival.life} hp")
 
     def rival_attack(self, player, rival):
         """method for calulate life if player choice combat"""
@@ -55,31 +55,32 @@ class Arena(Program):
             return
         else:
             if player.defense > rival.attack:
-                    dammages = player.defense - rival.attack
-                    player.life -= dammages
-                    print(f"l'adversaire contre attaque il vous touche vous avez  {self.player.life} hp")
-                    
+                dammages = player.defense - rival.attack
+                player.life -= dammages
+                print(f"L'adversaire contre attaque il vous touche vous avez {self.player.life} hp")
+                  
             if player.defense < rival.attack:
                 dammages = rival.attack /2
                 player.life -= dammages
-                print(f"l'adversaire contre attaque il vous touche vous avez  {self.player.life} hp")
-
+                print(f"L'adversaire contre attaque il vous touche vous avez {self.player.life} hp")
+       
     def run_or_fight(self, player, rival):
         """methode for use random for run if not good 
         go combat method calculate life after combat"""
         #use random for calculate chance of escapes rival
         chance = random.randint(0, 50)
         if chance == 49:
-            print("ennemis distancer reprend ton souffle")
+            print("Ennemis distancer, reprend ton souffle")
             return
         else:
             if player.defense > rival.attack:
                 dammages = player.defense - rival.attack
                 player.life -= dammages
-                print(f"il vous rattrape et vous frappe votre vie descend à {self.player.life} hp\nOn ne fuis pas une bagarre !")
+                print(f"Il vous rattrape et vous frappe votre vie descend à {self.player.life} hp\nOn ne fuis pas une bagarre !")
             if player.defense < rival.attack:
                 dammages = rival.attack /2
                 player.life -= dammages
-                print(f"il vous rarttrape et vous frappe votre vie descend à {self.player.life} hp\nOn ne fuis pas une bagarre !")
+                print(f"Il vous rattrape et vous frappe votre vie descend à {self.player.life} hp\nOn ne fuis pas une bagarre !")
+
         
             

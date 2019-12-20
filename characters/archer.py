@@ -12,3 +12,4 @@ class Archer(Person):
         print("vous n'etes pas magiciens!!")
         time.sleep(2)
         os.system('cls||clear')
+

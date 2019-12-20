@@ -7,6 +7,7 @@ from game.narrator import Narrator
 
 if __name__=='__main__':
     narrator = Narrator()
+    narrator.start_game()
     clear = Clear()
     player = Program()
     player.user_choice()
@@ -27,16 +28,17 @@ if __name__=='__main__':
         clear.clear_screen()
         if player.life <= 0:
             print("Tu est mort tu rejoins Biggie et Tupac")
+            narrator.end_game()
             break
         if rival.life <= 0:
-            print("Tu gagne ")
+            print("Tu as gagné félicitation ")
+            narrator.end_game()
             break
         if game.player_choice == "a":
             game.calc_life(player,rival)
+            clear.clear_screen()
             game.rival_attack(player, rival)
             clear.clear_screen()
         if game.player_choice == "r":
             game.run_or_fight(player, rival)
             clear.clear_screen()
-        
-        
