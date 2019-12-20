@@ -13,17 +13,9 @@ class Narrator():
     def rival_informations(self, rival):
         self.rival = rival
         print(f" {self.rival.name}\n \
-<<<<<<< HEAD
             votre ennemis a  en points de vie: {self.rival.life}\n \
             votre ennemis a en puissance d'attaque  {self.rival.attack}\n \
             votre ennemis a en défense {self.rival.defense}")
-
-    def print(self):
-        print("
-=======
-            Votre ennemis a en points de vie: {self.rival.life}\n \
-            Votre ennemis a en puissance d'attaque  {self.rival.attack}\n \
-            Votre ennemis a en défense {self.rival.defense}")
 
     def start_game(self):
         print("	               _______ _______ _______")
@@ -89,4 +81,3 @@ class Narrator():
         print("        ^*$E#)$..$#                         *   .ee==d%")
         print("           $.d$$$*                           *  J$$$e*")
         print("            #####                              #$$$")
->>>>>>> 3fbf083377b5f7969d5d216d2f26960196880e81
