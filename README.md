@@ -1,23 +1,35 @@
-Python3 : Jeu Simon
-Créer le jeu Simon en utilisant python3.
+# Python3 : RPG
+## Créer un RPG en Python.
+Rpg créer en équipe Fardid et Nicolas
 
-Déroulement
-Le joueur entre son nom et choisit la difficulté du jeu qui sera répartie de la maniere suivante:
+## Présentation
 
-facile : nombres entre 1 et 10, intervalle entre deux nombres de 3 secondes.
-moyen : nombres entre 1 et 20, intervalle entre deux nombres de 2 secondes.
-difficile : nombres entre 1 et 100, intervalle entre deux nombres de 1 seconde.
-Le jeu affiche à l'écran une séquence aléatoire de nombres qui grandit chaque tour de jeux. L'utilisateur doit indiquer l'ensemble des nombres de la séquence via une série d'inputs.
+Ce rpg est un project de  jeux représentant un rpg aux tour par tour 
+nous l'avons créés avec une classes pour chaque  personnage 
+nous avons aussi crée une classe commune et l'or de la creation d'un objet personnes c'est classe herite de 
+la classe commune.
 
-Si le joueur se trompe dans un nombre, le jeu s'arrête.
+nous avons crée des object game pour les reutiliser lors du combat 
+ansi que des objet pour la narratio et le time sleep clear pour effacer l'ecran comme transition .
 
-Critères de qualité
-Votre jeu devra :
+## Déroulement
 
-être responsive.
-un minimum stylisé
-Code structuré et commenté
-Bonus
-Le joueur peut choisir de rejouer une nouvelle partie quand il s'est trompé la séquance aléatoire de nombre doit être différent du précédent !
+- Le joueur peut choisir le type de personnage qu'il souhaite incarner
+- Trois classes sont disponibles pour le joueur (guerrier, archer, magicien)
+- Le joueur peut nommer son personnage comme il le désire au début du jeu
+- Trois classes sont disponibles pour les ennemis (orc, loup, zombie)
+- Les personnages ont tous au minimum les caractéristiques suivantes (vie, attaque, défense, agilité, nom)
+- Le magicien dispose en plus de mana représentant sa force magique
+- Un personnage peut en attaquer un autre, la cible perd alors de la vie en proportion de sa valeur de défense et de la valeur d'attaque de l'assaillant
+- Le magicien peut se soigner. Ce sort consomme du mana mais lui redonne de la vie. S'il n'a pas assez de mana, il ne peut pas le lancer
+- Un combat est simulé entre le personnage du joueur et un ennemi de votre choix jusqu'à ce que l'un ou l'autre des personnages soit mort.
+## Critères de qualité
+Spécifications techniques :
+- Langage Python 3
+- Organisation du code en modules et packages
+- Usage de la programmation orientée objet
+- Respect du principe DRY
+- Essayer de respecter certains des principes SOLID
+- Programme exécutable par le lancement d'un fichier main.py
 Ressources
 https://openclassrooms.com/fr/courses/235344-apprenez-a-programmer-en-python/232721-apprehendez-les-classes
