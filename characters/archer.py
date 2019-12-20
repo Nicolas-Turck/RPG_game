@@ -5,3 +5,7 @@ class Archer(Person):
         self.name = name
         super().__init__(350, 80, 30, 50, name)
 
+    def heal(self, player):
+        self.player = player
+        print("Vous n'etes pas magicien!!")
+
