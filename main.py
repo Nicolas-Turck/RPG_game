@@ -6,7 +6,9 @@ from game.arena import Arena
 from game.narrator import Narrator
 
 if __name__=='__main__':
+
     narrator = Narrator()
+    narrator.print()
     clear = Clear()
     player = Program()
     player.user_choice()

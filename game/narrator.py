@@ -16,3 +16,6 @@ class Narrator():
             votre ennemis a  en points de vie: {self.rival.life}\n \
             votre ennemis a en puissance d'attaque  {self.rival.attack}\n \
             votre ennemis a en défense {self.rival.defense}")
+
+    def print(self):
+        print("
