@@ -1,5 +1,4 @@
 from .character import Person
-
 class Loup(Person):
 
     def __init__(self):

@@ -1,4 +1,6 @@
 from .character import Person
+import os
+import time
 class Archer(Person):
     """class for archer player"""
     def __init__(self, name):
@@ -7,5 +9,7 @@ class Archer(Person):
 
     def heal(self, player):
         self.player = player
-        print("Vous n'etes pas magicien!!")
+        print("vous n'etes pas magiciens!!")
+        time.sleep(2)
+        os.system('cls||clear')
 
