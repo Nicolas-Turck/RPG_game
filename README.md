@@ -1,6 +1,6 @@
 # Python3 : RPG
 ## Créer un RPG en Python.
-Rpg créer en équipe Fardid et Nicolas
+Rpg créer en équipe Farid et Nicolas
 
 ## Présentation
 
