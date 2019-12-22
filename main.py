@@ -29,13 +29,12 @@ if __name__=='__main__':
         clear.clear_screen()
         if game.player_choice == "a":
             game.calc_life(player,rival)
+            game.rival_attack(player, rival)
             clear.clear_screen()
             if rival.life <= 0:
                 print("Tu as gagné félicitation ")
                 narrator.end_game()
                 break
-            game.rival_attack(player, rival)
-            clear.clear_screen()
             if player.life <= 0:
                 print("Tu est mort tu rejoins Biggie et Tupac")
                 narrator.end_game()
