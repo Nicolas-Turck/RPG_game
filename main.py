@@ -24,21 +24,28 @@ if __name__=='__main__':
     game = Arena(rival, player)
     # loops for game while player or rival is not dead
     while player.life > 0  or rival.life > 0:
+
         game.action(rival, player)
         clear.clear_screen()
+        if game.player_choice == "a":
+            game.calc_life(player,rival)
+            clear.clear_screen()
+            if rival.life <= 0:
+                print("Tu as gagné félicitation ")
+                narrator.end_game()
+                break
+            game.rival_attack(player, rival)
+            clear.clear_screen()
+            if player.life <= 0:
+                print("Tu est mort tu rejoins Biggie et Tupac ")
+                narrator.end_game()
+                break
+
+        if game.player_choice == "r":
+            game.run_or_fight(player, rival)
+            game.rival_attack(player, rival)
+            clear.clear_screen()
         if player.life <= 0:
             print("Tu est mort tu rejoins Biggie et Tupac")
             narrator.end_game()
             break
-        if rival.life <= 0:
-            print("Tu as gagné félicitation ")
-            narrator.end_game()
-            break
-        if game.player_choice == "a":
-            game.calc_life(player,rival)
-            clear.clear_screen()
-            game.rival_attack(player, rival)
-            clear.clear_screen()
-        if game.player_choice == "r":
-            game.run_or_fight(player, rival)
-            clear.clear_screen()
